@@ -44,7 +44,7 @@ Validate $? "Installing MySQL Server"
 systemctl start mysqld &>>$LOG_FILE_NAME
 Validate $? "Installing MySQL Server"
 
-    mysql -h mysql.daws82s.xyz -u root -pExpenseApp@1 -e 'show databases;'
+    mysql -h mysql.daws82s.xyz -u root -pExpenseApp@1 -e 'show databases;' &>>$LOG_FILE_NAME
     if [ $? -ne 0 ]
      then 
             echo "MYSQL Root password not setup" &>>$LOG_FILE_NAME
