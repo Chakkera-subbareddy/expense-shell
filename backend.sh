@@ -78,3 +78,4 @@ Validate $? "Enabling backend"
 
 systemctl start backend &>>$LOG_FILE_NAME
 Validate $? "starting backend"
+
